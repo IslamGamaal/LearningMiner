@@ -1,6 +1,15 @@
 <?php
 
 return [
+    
+    /*
+    |--------------------------------------------------------------------------
+    | heroku dB
+    |--------------------------------------------------------------------------
+    |
+    | mysql://bd020cbd57b731:83743d2a@us-cdbr-iron-east-03.cleardb.net/heroku_62ed8c6635e833b?reconnect=true
+    |
+    */
 
     /*
     |--------------------------------------------------------------------------
@@ -41,11 +50,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'us-cdbr-iron-east-03.cleardb.net'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => env('DB_DATABASE', 'heroku_62ed8c6635e833b'),
+            'username' => env('DB_USERNAME', 'bd020cbd57b731'),
+            'password' => env('DB_PASSWORD', '83743d2a'),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
